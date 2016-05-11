@@ -35,23 +35,34 @@ entity Tag {
 * All Domain objects inherit from MultitenantAware object.
 * Utilization of Spring Security SecurityContext
 * Users are restricted to create update delete their own Galleries
-* 
 
 # Api
-* User
+User
+----
 
-GET          | /users/{id}/media/search | search user media based on a query
-GET          | /users/{id}/media/recent | get user recent media
-GET          | /users/{id}/albums       | get user albums
-GET,PUT,POST | /users/self/media        | 
-GET          | /users/self/media/search | search self media based on a query
-GET          | /users/self/media/recent | get self recent media
-GET,PUT,POST | /users/self/albums       | get self albums
+| Operation    | Uri                      | description                        |
+| -------------| -------------------------| -----------------------------------|
+| GET          | /users/{id}/media/search | search user media based on a query |                           
+| GET          | /users/{id}/media/recent | get user recent media              |              
+| GET          | /users/{id}/albums       | get user albums                    |        
+| GET,PUT,POST | /users/self/media        |                                    |
+| GET          | /users/self/media/search | search self media based on a query |                           
+| GET          | /users/self/media/recent | get self recent media              |              
+| GET,PUT,POST | /users/self/albums       | get self albums                    |        
 
-* Albums
-GET | /albums/{id}   | get album information and list of media inside it
+Albums
+------
 
-* Media
-GET | /media/{id}    | 
-GET | /media/search  | geospatial query
+| Operation    | Uri                      | description                        |
+| -------------| -------------------------| -----------------------------------|
+| GET          | /albums/{id}             | get album information and list of media inside it |
+
+Media
+-----
+
+| Operation    | Uri                      | description                        |
+| -------------| -------------------------| -----------------------------------|
+| GET | /media/{id}    |                  |
+| GET | /media/search  | geospatial query |
+
 
