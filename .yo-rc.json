@@ -1,0 +1,28 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.3.0",
+    "baseName": "m_gallery",
+    "packageName": "me.zubi",
+    "packageFolder": "me/zubi",
+    "serverPort": "8088",
+    "authenticationType": "jwt",
+    "hibernateCache": "no",
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": "no",
+    "buildTool": "gradle",
+    "jwtSecretKey": "33bb4b1decfda7f107383742ad7ff960ea369aaf",
+    "enableTranslation": false,
+    "applicationType": "microservice",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "skipClient": true,
+    "skipUserManagement": true,
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "enableSocialSignIn": false
+  }
+}

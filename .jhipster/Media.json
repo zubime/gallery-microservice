@@ -1,0 +1,25 @@
+{
+  "relationships": [],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "caption",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "location",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20160513005811",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "microserviceName":"m_gallery"
+}

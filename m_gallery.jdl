@@ -1,0 +1,13 @@
+entity Media {
+ caption String
+ description String
+ location String
+}
+entity Album {
+ name String
+ description String
+}
+entity Tag {
+
+}
+ 

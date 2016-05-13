@@ -1,0 +1,17 @@
+version: '2'
+services:
+    m_gallery-mongodb:
+        container_name: m_gallery-mongodb
+        image: mongo:3.2.3
+        ports:
+            - "27017:27017"
+        command: mongos --configdb m_gallery-mongodb-config
+    m_gallery-mongodb-node:
+        build:
+            context: .
+            dockerfile: mongodb/MongoDB.Dockerfile
+        command: mongod --replSet rs1 --noprealloc --smallfiles
+    m_gallery-mongodb-config:
+        image: mongo:3.2.3
+        container_name: m_gallery-mongodb-config
+        command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
